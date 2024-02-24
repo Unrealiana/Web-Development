@@ -1,0 +1,159 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'Playfair display' serif;
+  src: url('Fonts\Playfair Display\PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glegoo' sans-serif;
+  src: url('Fonts\Gleegoo\Glegoo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;}
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #333; 
+}
+
+
+h1, h2 {
+  font-family: 'Glegoo', sans-serif;
+  letter-spacing: 0.05em; 
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+a, a:visited {
+  color: #a66; 
+  text-decoration: underline; 
+}
+
+a:hover, a:focus {
+  text-decoration: none; 
+  outline: none; 
+}
+
+a:active {
+  color: #d88;
+  font-weight: bold; 
+}
+
+
+a[target="_blank"]::after {
+  content: url('external-link-52.png'); 
+}
+
+
+section > p:first-of-type {
+  text-indent: 20px;
+}
+
+
+ul, ol {
+  padding-left: 20px; 
+}
+
+li {
+  margin-bottom: 0.5em; 
+}
+
+
+ul li {
+  list-style-type: disc; 
+}
+
+
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li + li {
+  margin-top: 10px; 
+}
+
+nav a {
+  display: block;
+  background: #fff; 
+  color: #333; 
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid #a66; 
+  text-transform: uppercase; 
+  font-family: 'Glegoo', sans-serif; 
+  font-size: 1.2rem; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover, nav a:focus {
+  background-color: #a66; 
+  color: #fff; 
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
